@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx_docker
+    ports:
+      - 8080:80
+    volumes:
+      - ./html:/usr/share/nginx/html
