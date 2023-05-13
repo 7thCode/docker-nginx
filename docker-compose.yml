@@ -1,6 +1,7 @@
 version: '3.1'
 services:
   nginx:
+    container_name: NGINX       
     build:
       context: .
       dockerfile: nginx_docker
